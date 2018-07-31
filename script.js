@@ -21,7 +21,7 @@ numberMap[zzz] = numberMap[zzz].toString(2);
 }
 
 for(var zz=0; zz<numberMap.length; zz++) {
-while(numberMap[zz].length < 7) {
+while(numberMap[zz].length < 8) {
 numberMap[zz] = "0" + numberMap[zz];
 }
 }
