@@ -31,3 +31,17 @@ array.push(String.fromCharCode(parseInt(numberMap[z]+numberMap[z+1],2)));
 }
 return array.join("");
 }
+function extract(arg) {
+var numberMap = arg.toNumberMap();
+for(var zzz=0; zzz<numberMap.length; zzz++) {
+numberMap[zzz] = numberMap[zzz].toString(2);
+}
+
+}
+var array = [];
+for (var z = 0; z<numberMap.length; z++) {
+array.push(String.fromCharCode(parseInt(numberMap[z].slice(0,7),2)));
+array.push(String.fromCharCode(parseInt(numberMap[z].slice(7),2)));
+}
+return array.join("");
+}
