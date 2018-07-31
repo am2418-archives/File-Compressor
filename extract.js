@@ -19,7 +19,7 @@ for(var zzz=0; zzz<numberMap.length; zzz++) {
 numberMap[zzz] = numberMap[zzz].toString(2);
 }
 
-}
+
 var array = [];
 for (var z = 0; z<numberMap.length; z++) {
 array.push(String.fromCharCode(parseInt(numberMap[z].slice(0,7),2)));
