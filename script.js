@@ -21,7 +21,7 @@ numberMap[zzz] = numberMap[zzz].toString(2);
 }
 
 for(var zz=0; zz<numberMap.length; zz++) {
-while(numberMap[zz].length < 7) {
+while(numberMap[zz].length < 8) {
 numberMap[zz] = "0" + numberMap[zz];
 }
 }
@@ -40,8 +40,8 @@ numberMap[zzz] = numberMap[zzz].toString(2);
 
 var array = [];
 for (var z = 0; z<numberMap.length; z++) {
-array.push(String.fromCharCode(parseInt(numberMap[z].slice(0,6),2)));
-array.push(String.fromCharCode(parseInt(numberMap[z].slice(6),2)));
+array.push(String.fromCharCode(parseInt(numberMap[z].slice(0,7),2)));
+array.push(String.fromCharCode(parseInt(numberMap[z].slice(7),2)));
 }
 return array.join("");
 }
